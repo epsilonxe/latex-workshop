@@ -1,0 +1,107 @@
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\usepackage[math]{thaispec}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\setlength{\columnsep}{4em}
+
+\renewcommand{\thepartno}{\bfseries\thequestion.\arabic{partno}}
+\renewcommand{\thesubpart}{\bfseries\thequestion.\arabic{partno}.\arabic{subpart}}
+\renewcommand{\subpartlabel}{\bfseries(\thesubpart)}
+\vqword{ข้อที่}
+\vpgword{หน้าที่}
+\vpword{คะแนนเต็ม}
+\vsword{คะแนนที่ได้}
+\vtword{คะแนนรวม}
+
+\setlength{\jot}{20pt}
+
+\pagestyle{headandfoot}
+\header{
+\textbf{\small ชื่อ-นามสกุล:} \makebox[0.4\textwidth]{\dotfill}
+}
+{}
+{\textbf{\small รหัสประจำตัว:} \makebox[0.3\textwidth]{\dotfill}
+%\textbf{\small กลุ่มเรียน:} \makebox[1cm]{\dotfill}
+}
+\firstpagefootrule 
+\runningfootrule
+\footer{\examname\; \examclass}{{\subjectid}\;{\subject}}{หน้าที่  \thepage\ จาก \numpages}
+ 
+\pointpoints{คะแนน}{คะแนน}
+\renewcommand\questionlabel{\textbf{ข้อที่ \thequestion.}}
+
+\newlength{\cspace}
+\setlength{\cspace}{3mm}
+\setlength{\gridsize}{7mm}
+
+\newcommand{\makecoverpage}{%
+\begin{coverpages}
+
+\begin{center}
+
+\includegraphics[height=3cm]{logo}	
+
+\inst\\
+\examname\;ภาคการศึกษา\;\examterm/\examyear\\
+
+\vspace{1.5\cspace}
+\begin{tabular}{|P{4.5cm}|P{4.5cm}|P{4.5cm}|}
+\hline
+รหัสวิชา \subjectid & 	 วันที่ \examdate & คะแนนเต็ม \numpoints\;คะแนน \\[0.5\cspace]
+\subject & เวลา \examtime & \exampercentage \\[0.5\cspace]
+\hline
+\end{tabular}
+\vspace{1.5\cspace}
+
+\hrule
+\vspace{\cspace}
+ชื่อ-นามสกุล \dotfill\hspace{-1ex}\dotfill รหัสประจำตัว \dotfill \\[1.2\cspace]
+กลุ่มเรียน \dotfill สาขาวิชา \dotfill\hspace{-1ex}\dotfill\hspace{-1ex}\dotfill\hspace{-1ex}\dotfill เลขที่นั่งสอบ \dotfill \\
+\vspace{\cspace}
+\hrule
+
+\vspace{0.5\cspace}
+
+\end{center}
+
+\begin{multicols}{2}
+
+{ 
+\small
+\textbf{อ่านคำชี้แจงให้เข้าใจก่อนลงมือทำข้อสอบ}
+\begin{enumerate}
+	\item ข้อสอบมีทั้งหมด\;\numpages\;หน้า จำนวน\;\numquestions\;ข้อ ถ้าผู้เข้าสอบได้ข้อสอบไม่ครบ ให้ผู้เข้าสอบแจ้งขอเปลี่ยนข้อสอบต่อกรรมการคุมสอบ
+	\item เขียน ชื่อ-นามสกุล รหัสนักศึกษา และกลุ่มเรียน ด้วยตัวบรรรจง\;\textbf{ทุกหน้า} หน้าที่มีข้อมูลไม่ครบถ้วนจะไม่ได้รับคะแนน
+	\item ให้ผู้เข้าสอบแสดงวิธีทำอย่างละเอียด หรือ ทำตามคำสั่งที่กำหนดไว้ในแต่ละข้ออย่างเคร่งครัด
+	\item \textbf{ไม่อนุญาต}\;ให้นำเอกสารเข้าและออกจากห้องสอบ
+	\item \textbf{ไม่อนุญาต}\;ให้ใช้เครื่องคำนวณ
+	\item \textbf{ไม่อนุญาต}\;ให้ใช้อุปกรณ์สื่อสารทุกชนิด
+	\item \textbf{ไม่อนุญาต}\;ให้แยกกระดาษข้อสอบออกจากกัน
+	\item ผู้เข้าสอบที่กระทำการ\;\textbf{ทุจริต}\;จะได้รับการลงโทษโดยไม่มีการยกเว้น
+\end{enumerate}
+
+\vfill\null
+\columnbreak
+}
+	
+\begin{center}
+\gradetablestretch{2}
+  \gradetable[v][questions]
+\end{center}
+\end{multicols}
+
+\vfill
+\begin{center}
+\textbf{\examclass}	
+\end{center}
+\newpage
+\phantom{x}	
+\end{coverpages}
+}
+
+
+

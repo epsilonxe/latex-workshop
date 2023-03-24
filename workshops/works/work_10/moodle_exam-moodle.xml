@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was generated on 2023-03-24 by XeLaTeX -->
+<!-- running on *NIX with the package moodle v0.9 -->
+
+<quiz>
+ 
+<question type="category">
+  <category>
+    <text>$course$/top/SET: A</text>
+  </category>
+</question>
+ 
+<question type="multichoice">
+  <name format="html"><text/></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>กำหนดให้ \(f(x) = x^2 + x -1\) จงหาค่า \(f(0)\) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>none</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(2\)</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>\(1\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(-1\)</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>\(-2\)</p>]]></text>
+  </answer>
+</question>
+<question type="numerical">
+  <name format="html"><text/></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>จงหาค่าของ \(\sin (0.40)\) เมื่อกำหนดให้ค่าจริงของ \(\sin (0.43)=0.41687\) <BR/>(ตอบในรูปทศนิยม 2 คำแหน่ง) </p>]]></text>
+  </questiontext>
+  <defaultgrade>2</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <answer fraction="100" format="plain_text">
+    <text>0.41</text>
+    <tolerance>1e-2</tolerance>
+  </answer>
+  <answer fraction="0" format="plain_text">
+    <text>*</text>
+  </answer>
+</question>
+ 
+</quiz>
